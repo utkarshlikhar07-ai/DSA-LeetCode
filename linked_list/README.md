@@ -7,7 +7,7 @@ LeetCode.
 
 ## 📌 Topics Covered
 
-- Reverse Linked List  
+- Reverse Linked List 
 - Detect Cycle in Linked List  
 - Merge Two Sorted Lists  
 - Remove Nth Node From End  

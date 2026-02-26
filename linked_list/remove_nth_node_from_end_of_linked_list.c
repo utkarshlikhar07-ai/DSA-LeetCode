@@ -28,12 +28,10 @@
  */
 
 #include <stdlib.h>
-# include <stdlib.h>
 struct ListNode {
-      int val;
-      struct ListNode *next;
-  };
-
+    int val;
+    struct ListNode *next;
+};
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     if (head == NULL) {
         return NULL;
@@ -50,6 +48,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
         free(temp);
         return head;
     }
+
     int index = count - n;
     struct ListNode* ptr2 = head;
     for (int i = 1; i < index; i++) {
@@ -58,5 +57,6 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     struct ListNode* temp = ptr2->next;
     ptr2->next = temp->next;
     free(temp);
+
     return head;
 }
